@@ -1,0 +1,109 @@
+/* General reset and typography */
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  text-align: center;
+  line-height: 1.7;
+  color: #333;
+}
+
+#main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#main:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+#title {
+  font-size: 3rem;
+  color: #222;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+#img-div {
+  margin-bottom: 25px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+#image:hover {
+  transform: scale(1.05);
+}
+
+#img-caption {
+  font-size: 1.3rem;
+  color: #888;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+#tribute-info {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: justify;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #1e90ff;
+  border-radius: 8px;
+  line-height: 1.8;
+}
+
+#tribute-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #1e90ff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#tribute-link:hover {
+  background-color: #006bb3;
+  transform: translateY(-3px);
+}
+
+/* Adding responsive styles */
+@media (max-width: 768px) {
+  #title {
+    font-size: 2.2rem;
+  }
+
+  #main {
+    padding: 20px;
+  }
+
+  #tribute-info {
+    font-size: 1.1rem;
+  }
+
+  #tribute-link {
+    font-size: 1rem;
+  }
+}
+
+/* Adding Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Raleway:wght@400;700&display=swap');
